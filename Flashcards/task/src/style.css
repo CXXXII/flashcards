@@ -1,0 +1,48 @@
+body {
+    text-align: center;
+    background: url("world.png") no-repeat;
+    background-size: cover;
+}
+.quiz-area {
+    width: 600px;
+    display: inline-block;
+}
+.title {
+    font-family: arial, sans-serif;
+    color: #324F4F;
+    font-weight: normal;
+}
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+.card {
+    font-family: "American Typewriter", serif;
+    color: #FE7D04;
+    font-weight: bold;
+    width: 180px;
+    height: 180px;
+    border: 5px solid #F8EFE5;
+    border-radius: 3px;
+    margin: 5px;
+    background-color: #F8EFE5;
+    transition: 2s ease;
+    transform-style: preserve-3d;
+}
+
+.card:hover {
+    transform: rotateY(180deg);
+}
+.front, .back {
+    backface-visibility: hidden;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.back {
+    transform: rotateY(180deg);
+}
